@@ -1,6 +1,6 @@
 {
     "database": {
-        "uri": "DATABASE_URI"
+        "uri": "postgres://pfebmzxh:m0LhBmi3s4tV-VYLuykpZNigUnGv1m3b@kesavan.db.elephantsql.com/pfebmzxh"
     },
     "authentication": {
         "cryptKey": "AUTHENTICATION_CRYPT_KEY"
