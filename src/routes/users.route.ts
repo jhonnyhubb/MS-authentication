@@ -11,9 +11,6 @@ import DatabaseError from '../errors/database.error.model';
 const usersRoute = Router();
 
 usersRoute.get('/users', async (req: Request, res: Response, next: NextFunction) => {
-
-    console.log(req.headers['authorization'])
-
     const users = await userRepository.findAllUsers();
     res.status( StatusCodes.OK ).send(users);
 });
