@@ -1,9 +1,7 @@
 import express, { Request, Response, NextFunction} from 'express';
-import statusRoute from './routes/status.route';
 import usersRoute from './routes/users.route';
-import authorizationRoute from './routes/authorization.route'
+import statusRoute from './routes/status.route';
 import errorHandler from './middleware/error-handler.middleware';
-
 
 const app = express();
 
@@ -12,9 +10,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 /* routes's configuration */
-app.use(statusRoute);
 app.use(usersRoute);
-app.use(authorizationRoute);
+app.use(statusRoute);
 
 /* error handler configuration */
 app.use(errorHandler);
